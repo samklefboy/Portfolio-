@@ -1,0 +1,55 @@
+.navbar-toggler,
+.navbar-toggler-icon,
+.navbar-toggler:active,
+.navbar-toggler:focus
+ {
+  box-shadow: none !important ;
+  border: none !important;
+  transition: all 0.3s ease;
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  background-color: rgb(209, 139, 10);
+  color: rgb(2, 2, 32) !important;
+  transform: scale(1.23);
+}
+
+.navbar-toggler-icon:hover {
+  transform: scale(1.25);
+
+}
+
+.navbar-toggler:active {
+  transform: rotate(90deg);
+}
+
+.offcanvas {
+  transition: all 0.4s ease, !important;
+  background-color: rgb(2, 2, 44) !important;
+  z-index: 1050 !important;
+}
+
+.offcanvas-backdrop {
+ 
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
+  border: none !important;
+  transition: all 0.4s ease !important;
+}
+
+.logo-name h2{
+  font-size: clamp(11px, 2vw, 22px) !important;
+ font-weight: 800 !important;
+  margin: 0 !important;
+  color: #c300ff;
+
+  span {
+    color: #fff;
+  }
+}
+
+
+
+

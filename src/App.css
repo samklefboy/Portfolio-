@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   font-family: 'Plus Jakart Sans' !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+ background: radial-gradient(#000000, #1d1d1d, #000000, #1d1d1d, #000000, #1d1d1d, #000000, #1d1d1d, #000000, #1d1d1d, #000000, #1d1d1d );
+ letter-spacing: 1px;
+
+ @media (max-width:764px) {
+  background: radial-gradient(#000000, #1d1d1d, #000000, #1d1d1d, #000000, #1d1d1d);
+ }
+}
+
+h1,h2,h3, .logo-name {
+font-family: 'syne';
+
+}
+

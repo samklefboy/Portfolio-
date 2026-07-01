@@ -1,0 +1,40 @@
+.hero {
+  color: #fff;
+  font-size: clamp(45px, 7vw, 75px);
+  
+  span {
+    color: hsl(288, 100%, 87%);
+    font-style: oblique;
+    letter-spacing: 5px;
+    font-size: clamp(69px, 7.5vw, 110px);
+    font-weight: 800;
+  }
+
+  .sub_text {
+    margin-top: 12px;
+    color: #fff;
+  }
+
+  button {
+    font-size: 17px;
+    width: 100%;
+ background: #eeaaff1f;
+ color: #cc00ff;
+    padding: 8px;
+    border:1px solid #c300ff48;
+  }
+
+  .profile-pic {
+    overflow: hidden;
+
+
+    img {
+      border-bottom: 3px solid #c300ff;
+      border-right:3px solid #c300ff;
+      object-fit: cover !important;
+width: 50%;
+aspect-ratio: 1/1;
+border-radius: 0 40px;
+    }
+  }
+}
