@@ -1,32 +1,32 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Form, FloatingLabel } from "react-bootstrap";
 import { Envelope, Github, TwitterX, Whatsapp } from "react-bootstrap-icons";
 import "../../styles/contact.css";
 
 const myContacts = [
   {
-    bg: "#7c550279",
-    color: "#7c5502fd",
+    bg: "#47310123",
+    color: "#ffae00fd",
     Icon: Envelope,
     a: "Email",
     b: "Amuleagbagunsamuel12@gmail.com",
   },
   {
-    bg: "#1b7c0286",
-    color: "#1a7c02",
+    bg: "#0f4b002c",
+    color: "#33ff00",
     Icon: Whatsapp,
     a: "Whatsapp",
     b: "+234 813 037 9493",
   },
   {
-    bg: "#7c024979",
-    color: "#7c0249fd",
+    bg: "#46002927",
+    color: "#ff0095fd",
     Icon: Github,
     a: "GitHub",
     b: "github.com/samklefboy",
   },
   {
-    bg: "#021e7c79",
-    color: "#021e7c",
+    bg: "#000f411e",
+    color: "#003cff",
     Icon: TwitterX,
     a: "Twitter / X",
     b: "@samklefboy",
@@ -50,9 +50,72 @@ export default function Contact() {
           <p>Open to freelance projects and remote opportunities </p>
         </div>
 
-        <Row>
-          <Col></Col>
-          <Col></Col>
+        <Row className="my-5">
+          <Col className="col-12 col-md-6">
+            <Row className="g-4">
+              {myContacts.map((mc) => {
+                return (
+                  <Col key={mc} className="col-12">
+                    <div
+                      className="d-flex align-items-center  gap-4 px-4 py-3"
+                      style={{ background: "#ffffff1f", borderRadius: "8px" }}
+                    >
+                      <div
+                        style={{
+                          background: `${mc.bg}`,
+                          padding: "12px",
+                          borderRadius: "12px",
+                        }}
+                      >
+                        <mc.Icon size={18} style={{ color: `${mc.color}` }} />
+                      </div>
+
+                      <div>
+                        <p className="m-0">{mc.a}</p>
+                        <h6 className="text-white">{mc.b}</h6>
+                      </div>
+                    </div>
+                  </Col>
+                );
+              })}
+            </Row>
+          </Col>
+
+          <Col>
+            <Form>
+              <FloatingLabel controlId="floatingName" label="NAME">
+                <Form.Control type="Name" placeholder="Your name" />
+              </FloatingLabel>
+
+              <FloatingLabel
+                controlId="floatingInput"
+                label="EMailADDRESS"
+                className="my-5"
+              >
+                <Form.Control type="email" placeholder="name@example.com" />
+              </FloatingLabel>
+
+              <FloatingLabel controlId="floatingSubject" label="SUBJECT">
+                <Form.Control type="subject" placeholder="Subject" />
+              </FloatingLabel>
+
+              <FloatingLabel
+                controlId="floatingTextarea"
+                label="MESSAGE"
+                className="mt-5"
+              >
+                <Form.Control
+                  as="textarea"
+                  placeholder="Tell me about your project here..."
+                  style={{ height: "100px" }}
+                />
+              </FloatingLabel>
+
+              <button type="submit" className="my-4 ms-auto d-block" size="lg">
+                Send
+              </button>
+            </Form>
+          </Col>
         </Row>
       </div>
     </Container>

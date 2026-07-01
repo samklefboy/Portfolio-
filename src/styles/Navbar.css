@@ -1,42 +1,36 @@
-.navbar-toggler,
-.navbar-toggler-icon,
-.navbar-toggler:active,
-.navbar-toggler:focus
- {
-  box-shadow: none !important ;
-  border: none !important;
-  transition: all 0.3s ease;
-  color: #fff !important;
-}
+
 
 .nav-link:hover {
   cursor: pointer;
-  background-color: rgb(209, 139, 10);
-  color: rgb(2, 2, 32) !important;
-  transform: scale(1.23);
+  transition: all 0.3s ease;
+h5 {
+  color: #c300ff !important;
 }
 
-.navbar-toggler-icon:hover {
-  transform: scale(1.25);
+div {
+  border-color: #fff !important;
+}
+
+svg {
+color:#fff !important;
+}
 
 }
 
-.navbar-toggler:active {
-  transform: rotate(90deg);
-}
+
 
 .offcanvas {
   transition: all 0.4s ease, !important;
-  background-color: rgb(2, 2, 44) !important;
-  z-index: 1050 !important;
+  background: transparent !important;
+    backdrop-filter: blur(35px) !important;
+  -webkit-backdrop-filter: blur(35px) !important;
+ width: 48% !important;
+ border-right:1px solid #ffffff27 !important;
 }
 
 .offcanvas-backdrop {
- 
-  backdrop-filter: blur(25px) !important;
-  -webkit-backdrop-filter: blur(25px) !important;
-  border: none !important;
-  transition: all 0.4s ease !important;
+background: #eeb8ff23 !important;
+
 }
 
 .logo-name h2{

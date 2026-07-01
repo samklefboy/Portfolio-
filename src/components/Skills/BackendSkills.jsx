@@ -3,9 +3,10 @@ import { Stack } from "react-bootstrap";
 export default function BackendSkills({ backend }) {
   return (
     <div className="d-flex flex-wrap gap-4 mt-3">
-      {backend.map((bck) => {
+      {backend.map((bck, i) => {
         return (
           <div
+            key={i}
             style={{
               background: "#ffffff21",
               border: "1px solid #ffffff7a",

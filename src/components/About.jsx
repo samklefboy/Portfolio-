@@ -46,9 +46,9 @@ export default function AboutMe() {
         </div>
 
         <Row className="my-3 g-4 ">
-          {aboutMe.map((abt) => {
+          {aboutMe.map((abt, i) => {
             return (
-              <Col className="col-12 col-md-4 ">
+              <Col key={i} className="col-12 col-md-4 ">
                 <div
                   className="d-flex flex-column  px-4 py-4 "
                   style={{ background: "#ffffff15" }}

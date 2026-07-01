@@ -5,7 +5,7 @@ import { Tools } from "./Stack";
 
 const myProjects = [
   {
-    img: ["Image_20230817_134810.jpeg", "Image_20230817_134929.jpeg"],
+    img: ["image_20230817_134810.jpeg", "image_20230817_134929.jpeg"],
     status: "In Development",
     color: "#eeff00",
     background: "#9aa5003a",
@@ -16,7 +16,7 @@ const myProjects = [
     stack: ["React", "Bootstrap", "SCSS", "Node.js", "More..."],
   },
   {
-    img: ["Screenshot_20230114-194316.jpg", "Screenshot_20230114-194417_1.png"],
+    img: ["screenshot_20230114-194316.jpg", "screenshot_20230114-194417_1.png"],
     status: "Live",
     color: "#00ff0d",
     background: "#00500446",

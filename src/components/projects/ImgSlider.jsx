@@ -14,11 +14,7 @@ export const Slider = ({ img }) => {
         {img.map((i) => {
           return (
             <SwiperSlide key={i} style={{ zIndex: 1 }}>
-              <img
-                src={`public/${i}`}
-                className="card-img-top"
-                style={{ zIndex: 1 }}
-              />
+              <img src={`/${i}`} className="card-img-top" />
             </SwiperSlide>
           );
         })}
