@@ -11,10 +11,10 @@ export const Slider = ({ img }) => {
         loop={true}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
       >
-        {img.map((i) => {
+        {img.map((im) => {
           return (
-            <SwiperSlide key={i} style={{ zIndex: 1 }}>
-              <img src={`/${i}`} className="card-img-top" />
+            <SwiperSlide key={im}>
+              <img href={`/${im}`} src={`/${im}`} className="card-img-top" />
             </SwiperSlide>
           );
         })}

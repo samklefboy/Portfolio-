@@ -1,6 +1,23 @@
+.navbar {
+  background: transparent !important ;
+  transition: all 0.35s ease;
+  transform: translateY(0);
+ 
+}
 
+.nav_scrolled {
+  background: rgba(255, 255, 255, 0.137) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.062);
+  border-bottom: 1px solid rgba(255, 255, 255, .2) ;
+ transform: translateY(-2px);
+  margin: 0 !important;
+ 
+ 
+}
 
-.nav-link:hover {
+.nav-link:hover, .active{
   cursor: pointer;
   transition: all 0.3s ease;
 h5 {
@@ -29,15 +46,15 @@ color:#fff !important;
 }
 
 .offcanvas-backdrop {
-background: #eeb8ff23 !important;
+background: #2d0b3646 !important;
 
 }
 
 .logo-name h2{
   font-size: clamp(11px, 2vw, 22px) !important;
  font-weight: 800 !important;
-  margin: 0 !important;
   color: #c300ff;
+  margin: 0;
 
   span {
     color: #fff;

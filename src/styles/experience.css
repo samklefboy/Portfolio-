@@ -1,0 +1,33 @@
+.my_experience {
+  color:#ffffffb0 !important ;
+  margin-top: 250px;
+
+  .exp-border {
+    height: 700px ;
+
+    @media (max-width:767px) {
+      height:100%;
+    }
+  }
+ 
+}
+
+@keyframes zoom {
+  0% {transform: scale(0);}
+  50% {transform: scale(0.7);}
+ 100% {transform:scale(0); }
+}
+
+.zooming {
+  animation: zoom 2s ease-in-out infinite ;
+}
+
+@keyframes turn {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(360deg);}
+ 100% {transform:rotate(0deg); }
+}
+
+.turning {
+  animation: turn 2s ease-in-out infinite ;
+}

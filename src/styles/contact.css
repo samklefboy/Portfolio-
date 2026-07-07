@@ -1,4 +1,35 @@
 .contact_me {
-  margin-top: 100px;
+  margin-top: 250px;
   color:#ffffffb0 !important ;
+
+  .form-floating {
+    
+
+   input, textarea{
+    background: #66666642 !important;
+    color:#fff;
+    letter-spacing: 4 !important;
+   // font-family: "Syne";
+  
+    &:focus {
+      box-shadow: none;
+      border: none;
+    }
+   }
+
+   label  {
+      color: #ffffffb0 !important;
+      font-size: 12px;
+      
+   }
+  }
+
+  button {
+    background: #cc00ffb2;
+    color: #000;
+    padding: 10px 32px;
+   
+  }
+  
 }
+

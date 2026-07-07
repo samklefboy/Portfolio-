@@ -29,36 +29,44 @@ const tools = [
 export default function Skills() {
   return (
     <Container>
-      <div className="my_skill">
-        <div className="d-inline-flex flex-column mb-4">
-          <h4 className="mt-5 mb-3  " style={{ color: "#eeaaff" }}>
-            MY Stack
+      <div id="Stacks">
+        <div className="my_skill">
+          <div className="d-inline-flex flex-column mb-4">
+            <h4 className="mt-5 mb-3  " style={{ color: "#eeaaff" }}>
+              MY Stack
+            </h4>
+
+            <div style={{ border: "2px solid #eeaaff", width: "50%" }} />
+          </div>
+
+          <div>
+            <h1 className="text-white">Skills & tools</h1>
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <h4 className="mb-4" style={{ color: "#ffffff4b" }}>
+            FRONTEND
           </h4>
 
-          <div style={{ border: "2px solid #eeaaff", width: "50%" }} />
+          <FrontendSkills frontend={frontend} />
+        </div>
+
+        <div className="my-5 py-5">
+          <h4 className="mb-4" style={{ color: "#ffffff4b" }}>
+            BACKEND & DATABASE
+          </h4>
+
+          <BackendSkills backend={backend} />
         </div>
 
         <div>
-          <h1 className="text-white">Skills & tools</h1>
+          <h4 className="mb-4" style={{ color: "#ffffff4b" }}>
+            TOOLS
+          </h4>
+
+          <Tools tools={tools} />
         </div>
-      </div>
-
-      <div className="my-5">
-        <h4 style={{ color: "#ffffff4b" }}>FRONTEND</h4>
-
-        <FrontendSkills frontend={frontend} />
-      </div>
-
-      <div className="mb-5">
-        <h4 style={{ color: "#ffffff4b" }}>BACKEND & DATABASE</h4>
-
-        <BackendSkills backend={backend} />
-      </div>
-
-      <div className="mb-5">
-        <h4 style={{ color: "#ffffff4b" }}>TOOLS</h4>
-
-        <Tools tools={tools} />
       </div>
     </Container>
   );
