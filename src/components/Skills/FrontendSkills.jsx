@@ -8,12 +8,12 @@ export default function FrontendSkills({ frontend }) {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.5 }}
     >
       <div className="d-flex flex-wrap gap-4 mt-3">
         {frontend.map((fr, i) => {
           return (
-            <motion.div varaiants={fadeUp}>
+            <motion.div variants={fadeUp}>
               <div
                 key={i}
                 style={{
