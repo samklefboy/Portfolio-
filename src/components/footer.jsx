@@ -1,6 +1,6 @@
 import { Stack, Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { fadeLeft, fadeUp } from "../animation";
+import { fadeLeft, fadeRight } from "../animation";
 import { Twitter, Whatsapp, Linkedin, Github } from "react-bootstrap-icons";
 import "../styles/footer.css";
 
@@ -41,9 +41,9 @@ export default function Footer() {
             </motion.div>
           </Col>
 
-          <Col className="col-12 col-sm-auto ">
+          <Col className="col-12 col-sm-auto ms-sm-auto">
             <motion.div
-              variants={fadeUp}
+              variants={fadeRight}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0 }}

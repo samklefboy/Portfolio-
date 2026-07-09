@@ -54,7 +54,10 @@ export default function Hero() {
                         }}
                       >
                         <div className="d-flex flex-column">
-                          <h1 className="m-0" style={{ color: "#ffbb00" }}>
+                          <h1
+                            className="m-0"
+                            style={{ color: "#fffb00 !important" }}
+                          >
                             {exp.a}
                           </h1>
                           <p className="m-0" style={{ fontSize: "15px" }}>

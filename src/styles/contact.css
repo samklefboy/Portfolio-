@@ -5,11 +5,11 @@
   .form-floating {
     
 
-   input, textarea{
+   input textarea{
     background: #66666642 !important;
     color:#fff;
     letter-spacing: 4 !important;
-   // font-family: "Syne";
+
   
     &:focus {
       box-shadow: none;
