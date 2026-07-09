@@ -6,7 +6,7 @@ export default function BackendSkills({ backend, container, chip }) {
     <div className="d-flex flex-wrap gap-4 mt-3">
       <motion.div
         className="d-flex gap-4 flex-wrap"
-        varaiants={container}
+        variants={container}
         initial="hidden"
         whileInView="show"
         viewPort={{ once: true }}
@@ -15,7 +15,7 @@ export default function BackendSkills({ backend, container, chip }) {
           return (
             <div key={bck}>
               <motion.div
-                varaiants={chip}
+                variants={chip}
                 style={{
                   background: "#ffffff21",
                   border: "1px solid #ffffff7a",
