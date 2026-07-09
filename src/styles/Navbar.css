@@ -6,12 +6,15 @@
 }
 
 .nav_scrolled {
-  background: rgba(255, 255, 255, 0.055) !important;
+  background: rgba(255, 255, 255, 0.355) !important;
+
+  @supports(backdrop-filter : blur(1px)){
+    background: rgba(255, 255, 255, 0.055) !important;
   backdrop-filter: blur(80px);
   -webkit-backdrop-filter: blur(80px);
   box-shadow: 0 8px 30px rgba(255, 255, 255, 0.062);
   border-bottom: 1px solid rgba(255, 255, 255, .2) ;
-
+  }
 
 
  
@@ -38,12 +41,16 @@ color:#fff !important;
 
 
 .offcanvas {
+  background: rgba(255, 255, 255, 0.355) !important;
+
+  @supports(backdrop-filter:blur(1px)){
   transition: all 0.4s ease, !important;
   background: transparent !important;
     backdrop-filter: blur(85px) !important;
   -webkit-backdrop-filter: blur(85px) !important;
  width: 48% !important;
  border-right:1px solid #ffffff27 !important;
+  }
 }
 
 .offcanvas-backdrop {
