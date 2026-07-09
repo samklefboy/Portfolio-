@@ -19,10 +19,10 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive:true });
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -31,7 +31,7 @@ function Header() {
     <div>
       <Navbar className={`fixed-top  ${scrolled ? "nav_scrolled" : ""}`}>
         <Container>
-          <div className="py-3 d-flex align-items-center w-100">
+          <div className="py-1 d-flex align-items-center w-100">
             <div
               className="logo-name me-auto d-flex "
               style={{ cursor: "pointer" }}
