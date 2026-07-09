@@ -1,6 +1,6 @@
 import { Container, Row, Col, Card, Stack } from "react-bootstrap";
 import "../../styles/projects.css";
-import { Slider } from "./ImgSlider";
+import { ImgSlider } from "./ImgSlider";
 import { Tools } from "./Stack";
 import { motion } from "framer-motion";
 import { fadeUp, zoomIn } from "../../animation";
@@ -67,7 +67,7 @@ export default function Projects() {
                     style={{ border: `1px solid ${p.background}` }}
                   >
                     <div className="card_top">
-                      <Slider img={p.img} />
+                      <ImgSlider img={p.img} />
 
                       <div
                         style={{

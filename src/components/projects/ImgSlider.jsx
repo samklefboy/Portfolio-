@@ -2,14 +2,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "Swiper/css";
 
-export const Slider = ({ img }) => {
+export const ImgSlider = ({ img }) => {
   return (
     <div>
       <Swiper
         modules={[Autoplay]}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
       >
         {img.map((im) => {
           return (

@@ -6,15 +6,11 @@ export const Name = () => {
   return (
     <div>
       <Swiper
-        className="my-3 my-lg-4"
+        className="my-3 my-lg-4 name-slider"
         direction="vertical"
-        style={{
-          height: "clamp(91px, 10.5vw, 145px)",
-          overflow: "hidden",
-        }}
         modules={[Autoplay]}
         loop={true}
-        autoplay={{ speed: 2000, disableOnInteraction: false }}
+        autoplay={{ speed: 1800, disableOnInteraction: false }}
       >
         <SwiperSlide className="">
           <span>Amuleagbagun</span>

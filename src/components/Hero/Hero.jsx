@@ -11,10 +11,12 @@ export default function Hero() {
         <div className="hero" id="Home">
           <Row className="text-center g-5 align-items-center">
             <Col className="col-12 col-lg-8">
-              <div style={{ lineHeight: "60px" }}> Hi, I am </div>
-              <Name />
+              <div style={{ lineHeight: 1.5 }}>
+                {" "}
+                Hi, I am <Name />{" "}
+              </div>
 
-              <div className="sub_text">
+              <div className="sub_text ">
                 Frontend Developer & UI Engineer based in lagos, Nigera.
               </div>
               <div className="d-flex gap-3 mt-5">

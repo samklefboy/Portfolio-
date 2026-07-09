@@ -1,7 +1,7 @@
 .hero {
   color: #fff;
   font-size: clamp(45px, 5vw, 65px);
-  line-height: 1.5;
+  line-height: 1.65;
 margin-top: 180px;
 
 @media (max-width:991px) {
@@ -11,14 +11,15 @@ margin-top: 180px;
 
 @media (min-width:0) and (max-width:600px) {
 margin-top: 90px;
-  font-size: 43px;
+  font-size: 40px;
 }
   
   span {
     color: hsl(288, 100%, 87%);
     font-style: oblique;
-    font-size: clamp(60px, 7.5vw, 90px);
+    font-size: clamp(50px, 7.5vw, 90px);
     font-weight: 800;
+    line-height: 0.9;
   }
 
   .sub_text {
@@ -67,11 +68,19 @@ border-radius: 0 40px;
   }
 
 @keyframes float {
-  0% {transform: translateX(0px); filter: drop-shadow(0 10 15px #ffffffb9);}
-  50%{transform: translateX(-5px); filter: drop-shadow(0 10 15px #ffffff27);}
-  100%{transform: translateX(0px); filter: drop-shadow(0 10 15px #ffffffb4);}
+  0% {transform: translateX(-3px); }
+  
+  50%{transform: translateX(5px); }
+  100%{transform: translateX(-3px); }
 }
 
 .floating-img {
-  animation: float  3s ease-in-out infinite ;
+  animation: float  2s ease-in-out infinite ;
+}
+
+.name-slider {
+  .swiper-slide {
+    text-align: center;
+  }
+  height: clamp(70px, 8.8vw, 100px);
 }

@@ -29,7 +29,7 @@ function Header() {
 
   return (
     <div>
-      <Navbar className={`fixed-top  ${scrolled ? "nav_scrolled py-2" : ""}`}>
+      <Navbar className={`fixed-top  ${scrolled ? "nav_scrolled" : ""}`}>
         <Container>
           <div className="py-3 d-flex align-items-center w-100">
             <div
@@ -37,7 +37,7 @@ function Header() {
               style={{ cursor: "pointer" }}
             >
               <h2>
-                <a style={{ color: "#c300ff" }} href="#Home">
+                <a style={{ color: "#fffb00" }} href="#Home">
                   AMULEAGBAGUN SAMUEL{" "}
                 </a>
                 <span>.</span>

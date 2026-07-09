@@ -2,5 +2,8 @@
   color: #c300ff ;
   font-size: 18px;
 
+   &:hover, .active {
+    color: #ae33d4dc;
+   }
 }
 
