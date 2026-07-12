@@ -5,7 +5,7 @@ color:#ffffffb0 !important ;
 
 .card {
     @media (min-width:768px){
-      height: 725px !important;
+      height: 635px !important;
     }
   }
 
@@ -27,7 +27,7 @@ color:#ffffffb0 !important ;
       img {
      
       
-      object-fit: contain;
+      object-fit: cover ;
       }
     }
 

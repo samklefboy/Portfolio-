@@ -36,7 +36,7 @@ export default function AboutMe() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.15 }}
           variants={fadeUp}
         >
           <div className="d-inline-flex flex-column mb-4">
@@ -62,8 +62,8 @@ export default function AboutMe() {
                       variants={zoomIn}
                     >
                       <div
-                        className="d-flex flex-column  px-4 py-4 "
-                        style={{ background: "#ffffff15" }}
+                        className="d-flex flex-column  px-4 py-4 abt-col"
+                        style={{ background: "#ffffff27" }}
                       >
                         <div
                           style={{

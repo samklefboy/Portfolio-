@@ -1,6 +1,6 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { fadeLeft } from "../../animation";
+import { fadeUp } from "../../animation";
 import "../../styles/Hero.css";
 import { Name } from "./NameSlider";
 
@@ -11,15 +11,16 @@ export default function Hero() {
         <div className="hero" id="Home">
           <Row className="text-center g-5 align-items-center">
             <Col className="col-12 col-lg-8">
-              <div style={{ lineHeight: 1.5 }}>
+              <div className="slide1" style={{ lineHeight: 1.5 }}>
                 {" "}
                 Hi, I am <Name />{" "}
               </div>
 
-              <div className="sub_text ">
+              <div className="sub_text">
                 Frontend Developer & UI Engineer based in lagos, Nigera.
               </div>
-              <div className="d-flex gap-3 mt-5">
+
+              <div className="d-flex gap-3 mt-5 btn">
                 <button>
                   {" "}
                   <a href="#Projects">View My Work</a>
@@ -41,7 +42,7 @@ export default function Hero() {
                   return (
                     <motion.div
                       key={exp}
-                      variant={fadeLeft}
+                      variant={fadeUp}
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: true }}

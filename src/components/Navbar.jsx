@@ -19,10 +19,10 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -30,43 +30,38 @@ function Header() {
   return (
     <div>
       <Navbar className={`fixed-top  ${scrolled ? "nav_scrolled" : ""}`}>
-        <Container>
-          <div className="py-3 d-flex align-items-center w-100">
-            <div
-              className="logo-name me-auto d-flex "
-              style={{ cursor: "pointer" }}
-            >
-              <h2>
-                <a style={{ color: "#fffb00" }} href="#Home">
-                  AMULEAGBAGUN SAMUEL{" "}
-                </a>
-                <span>.</span>
-              </h2>
-            </div>
+        <Container fluid className="px-3">
+          <div
+            className="logo-name me-auto d-flex "
+            style={{ cursor: "pointer" }}
+          >
+            <h2>
+              <a style={{ color: "#c300ff " }} href="#Home">
+                AMULEAGBAGUN SAMUEL{" "}
+              </a>
+            </h2>
+          </div>
 
-            <Nav>
-              <FaBars
-                onClick={handleShow}
-                className={` d-lg-none me-3 ${show ? "d-none" : "d-block"}`}
-                size={25}
-                style={{ color: "#ffffffb0", cursor: "pointer" }}
-              />
+          <div>
+            <FaBars
+              onClick={handleShow}
+              className={` d-lg-none m-0 p-0  ${show ? "d-none" : "d-block"}`}
+              size={20}
+              style={{ color: "#ffffffb0", cursor: "pointer", flexShrink: 0 }}
+            />
 
-              <div className="d-none d-lg-flex gap-1">
-                {["Home", "About", "Stacks", "Projects", "Contacts"].map(
-                  (ab) => {
-                    return (
-                      <Nav.Link
-                        key={ab}
-                        href={`#${ab}`}
-                        style={{ color: "#ffffffb0" }}
-                      >
-                        <h5>{ab}</h5>
-                      </Nav.Link>
-                    );
-                  },
-                )}
-              </div>
+            <Nav className="d-none d-lg-flex gap-1">
+              {["Home", "About", "Stacks", "Projects", "Contacts"].map((ab) => {
+                return (
+                  <Nav.Link
+                    key={ab}
+                    href={`#${ab}`}
+                    style={{ color: "#ffffffb0" }}
+                  >
+                    <h5>{ab}</h5>
+                  </Nav.Link>
+                );
+              })}
             </Nav>
           </div>
         </Container>

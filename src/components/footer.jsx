@@ -1,13 +1,12 @@
 import { Stack, Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { fadeLeft, fadeRight } from "../animation";
+import { fadeUp } from "../animation";
 import { Twitter, Whatsapp, Linkedin, Github } from "react-bootstrap-icons";
 import "../styles/footer.css";
 
 export default function Footer() {
   return (
     <div
-      className=""
       style={{
         background: " #0000009a ",
         backdropFilter: "blur(20px)",
@@ -17,7 +16,7 @@ export default function Footer() {
         <Row className="align-items-center">
           <Col className="col-12 col-sm-6">
             <motion.div
-              varaiants={fadeLeft}
+              varaiants={fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0 }}
@@ -43,7 +42,7 @@ export default function Footer() {
 
           <Col className="col-12 col-sm-auto ms-sm-auto">
             <motion.div
-              variants={fadeRight}
+              variants={fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0 }}

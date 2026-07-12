@@ -1,5 +1,18 @@
 .about_me {
-  color:#ffffffb0 !important ;
+  color:#000000 !important ;
   margin-top: 250px;
  
 }
+
+.abt-col {
+  box-shadow: 2px 1px 32px #ffffff2d;
+}
+
+   @media (max-height:768px) {
+    
+    .abt-col {
+      height: 700px !important;
+    }
+
+   }
+  

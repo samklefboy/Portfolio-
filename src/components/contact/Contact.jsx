@@ -68,12 +68,12 @@ export default function Contact() {
 
         <div className="my-5">
           <Row className="g-5">
-            <Col className="col-12 col-lg-6">
+            <Col className="col-12 col-md-6">
               <motion.div
                 variants={fadeUp}
                 whileInView="visible"
                 initial="hidden"
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.15 }}
               >
                 {myContacts.map((mc) => {
                   return (
@@ -101,7 +101,9 @@ export default function Contact() {
                           <p className="m-0">{mc.a}</p>
                           <p
                             className="text-white mt-1"
-                            style={{ fontSize: "13px" }}
+                            style={{
+                              fontSize: "clamp(11px, 1.5vw, 13px)",
+                            }}
                           >
                             {mc.b}
                           </p>
@@ -118,7 +120,7 @@ export default function Contact() {
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true, amount: 0 }}
               >
                 <Form className="">
                   <FloatingLabel controlId="floatingName" label="NAME">

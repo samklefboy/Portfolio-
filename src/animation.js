@@ -29,5 +29,5 @@ export const zoomIn = {
 
 export const container = {
   hidden: {},
-  visible: { transition: { staggerChildren: 1.15 } },
+  visible: { transition: { staggerChildren: 0.5 } },
 };

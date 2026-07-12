@@ -5,7 +5,7 @@
   .form-floating {
     
 
-   input textarea{
+   .form-control{
     background: #66666642 !important;
     color:#fff;
     letter-spacing: 4 !important;

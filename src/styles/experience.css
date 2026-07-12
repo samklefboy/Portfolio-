@@ -4,6 +4,7 @@
 
   .exp-border {
     height: 700px ;
+   box-shadow: -5px 3px 35px #66666665;
 
     @media (max-width:767px) {
       height:100%;

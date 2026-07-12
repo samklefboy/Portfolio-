@@ -37,7 +37,7 @@ export default function Experience() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={fadeUp}
         >
           <div className="d-inline-flex flex-column mb-4">
@@ -49,17 +49,18 @@ export default function Experience() {
           </div>
 
           <div>
-            <h1 className="text-white">Experience & timeline</h1>
+            <h1 className="text-white mt-4">Experience & timeline</h1>
+
             <Row className="my-5 g-5 ">
               {myExperience.map((exp, i) => {
                 return (
                   <Col key={i} className="col-12 col-md-6 col-lg-4">
                     <motion.div
                       className="exp-border"
-                      style={{ border: "1px solid #2c2c2c", padding: 40 }}
+                      style={{ border: "1px solid #2c2c2c", padding: 30 }}
                       initial="hidden"
                       whileInView="visible"
-                      viewport={{ once: true, amount: 0.5 }}
+                      viewport={{ once: true, amount: 0.11 }}
                       variants={zoomIn}
                     >
                       <Stack

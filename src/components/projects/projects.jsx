@@ -1,7 +1,6 @@
 import { Container, Row, Col, Card, Stack } from "react-bootstrap";
 import "../../styles/projects.css";
 import { ImgSlider } from "./ImgSlider";
-import { Tools } from "./Stack";
 import { motion } from "framer-motion";
 import { fadeUp, zoomIn } from "../../animation";
 
@@ -15,7 +14,6 @@ const myProjects = [
     category: "E-commerce platform",
     b: "A full marketplace platform where buyer connects with local stores. Features orders, wishlist, wallet store, user profiles and more ",
     c: "frontends built, backend integration with prisma & progresQl in progress",
-    stack: ["React", "Bootstrap", "SCSS", "Node.js", "More..."],
   },
   {
     img: ["riobeta1.jpg", "riobeta2.jpg"],
@@ -25,7 +23,6 @@ const myProjects = [
     a: "Riobeta",
     category: "B2B SaaS Landing Page",
     b: "A conversion-focused landing page for a business communication platform that help companies integrate SMS and voice call sevices.",
-    stack: ["React", "Bootstrap", "SCSS", "More..."],
   },
 ];
 
@@ -37,7 +34,7 @@ export default function Projects() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.15 }}
         >
           <div className="d-inline-flex flex-column mb-4">
             <h4 className="mt-5 mb-3  " style={{ color: "#eeaaff" }}>
@@ -99,21 +96,19 @@ export default function Projects() {
                         <small style={{ color: `${p.color}` }}>{p.c}</small>
                       </div>
 
-                      <Tools tool={p.stack} />
-
                       <Stack
                         className="mb-4 mt-5"
                         direction="horizontal"
                         gap={2}
                       >
                         <button
-                          className="w-100 py-2"
+                          className="w-100 p-2"
                           style={{ background: "transparent", color: "#fff" }}
                         >
                           Live preview
                         </button>
                         <button
-                          className="w-100 py-2"
+                          className="w-100 p-2"
                           style={{ background: "transparent", color: "#fff" }}
                         >
                           GitHub
