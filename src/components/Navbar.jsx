@@ -20,6 +20,7 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
+      setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -47,7 +48,7 @@ function Header() {
               onClick={handleShow}
               className={` d-lg-none m-0 p-0  ${show ? "d-none" : "d-block"}`}
               size={20}
-              style={{ color: "#ffffffb0", cursor: "pointer"}}
+              style={{ color: "#ffffffb0", cursor: "pointer" }}
             />
 
             <div className="d-none d-lg-flex gap-4">

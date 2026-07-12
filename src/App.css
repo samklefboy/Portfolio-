@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
+  padding:0;
 }
 
 a {
@@ -24,7 +24,7 @@ body {
 }
 
 h1,h2,h3, .logo-name {
-font-family: 'syne';
+font-family: 'barlow';
 
 }
 

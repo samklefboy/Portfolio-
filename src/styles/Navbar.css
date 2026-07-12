@@ -39,6 +39,9 @@ color:#fff !important;
 
 
 .offcanvas {
+  background: rgba(255, 255, 255, 0.355) !important;
+
+  @supports(backdrop-filter:blur(1px)){
   transition: all 0.4s ease, !important;
   background: #000000bd !important;
   width: 48% !important;
@@ -51,6 +54,7 @@ color:#fff !important;
   -webkit-backdrop-filter: blur(25px) !important;
  width: 48% !important;
  border-right:1px solid #ffffff27 !important;
+  }
   }
 }
 
