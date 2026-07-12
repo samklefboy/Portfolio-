@@ -8,8 +8,8 @@ const frontend = [
   { color: "#e20a02", a: "React" },
   { color: "#e202aa", a: "Bootstrap" },
   { color: "#8802e2", a: "Javascript" },
-  { color: "#0602e2", a: "HTML & CSS" },
   { color: "#91e903", a: "SCSS" },
+  { color: "#0602e2", a: "HTML & CSS" },
 ];
 
 const backend = [

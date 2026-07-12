@@ -29,8 +29,8 @@ function Header() {
 
   return (
     <div>
-      <Navbar className={`fixed-top  ${scrolled ? "nav_scrolled" : ""}`}>
-        <Container fluid className="px-3">
+      <Navbar className={`fixed-top py-3  ${scrolled ? "nav_scrolled" : ""}`}>
+        <Container fluid className="px-3 px-md-5">
           <div
             className="logo-name me-auto d-flex "
             style={{ cursor: "pointer" }}
@@ -47,10 +47,10 @@ function Header() {
               onClick={handleShow}
               className={` d-lg-none m-0 p-0  ${show ? "d-none" : "d-block"}`}
               size={20}
-              style={{ color: "#ffffffb0", cursor: "pointer", flexShrink: 0 }}
+              style={{ color: "#ffffffb0", cursor: "pointer"}}
             />
 
-            <Nav className="d-none d-lg-flex gap-1">
+            <div className="d-none d-lg-flex gap-4">
               {["Home", "About", "Stacks", "Projects", "Contacts"].map((ab) => {
                 return (
                   <Nav.Link
@@ -62,7 +62,7 @@ function Header() {
                   </Nav.Link>
                 );
               })}
-            </Nav>
+            </div>
           </div>
         </Container>
       </Navbar>

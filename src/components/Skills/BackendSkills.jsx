@@ -6,7 +6,7 @@ export default function BackendSkills({ backend }) {
   return (
     <motion.div
       className="d-flex gap-4 flex-wrap"
-      varaiants={container}
+      variants={container}
       initial="hidden"
       whileInView="visible"
       viewPort={{ once: true }}
@@ -15,7 +15,7 @@ export default function BackendSkills({ backend }) {
         return (
           <div key={bck}>
             <motion.div
-              varaiants={fadeUp}
+              variants={fadeUp}
               style={{
                 background: "#ffffff21",
                 border: "1px solid #ffffff7a",

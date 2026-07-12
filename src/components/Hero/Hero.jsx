@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="hero" id="Home">
           <Row className="text-center g-5 align-items-center">
             <Col className="col-12 col-lg-8">
-              <div className="slide1" style={{ lineHeight: 1.5 }}>
+              <div className="slide1" style={{ lineHeight: 1.3 }}>
                 {" "}
                 Hi, I am <Name />{" "}
               </div>
@@ -30,8 +30,8 @@ export default function Hero() {
             </Col>
 
             <Col className="col-12 col-lg-4 ">
-              <div className="profile-pic img-fluid mt-5 mt-lg-0">
-                <Image className="floating-img" />
+              <div className="profile-pic mt-5 mt-lg-0">
+                <img src="profile.jpg" alt="/profile_pic.jpg" className="floating-img" />
               </div>
 
               <div className="my_journey my-5">
@@ -42,10 +42,10 @@ export default function Hero() {
                   return (
                     <motion.div
                       key={exp}
-                      variant={fadeUp}
+                      variants={fadeUp}
                       initial="hidden"
                       whileInView="visible"
-                      viewport={{ once: true }}
+                      viewport={{ once: true, amount: 0.15 }}
                     >
                       <div
                         className="d-flex align-items-center justify-content-center p-3"

@@ -5,7 +5,7 @@ import { container, fadeUp } from "../../animation";
 export default function FrontendSkills({ frontend }) {
   return (
     <motion.div
-      className="d-flex gap-4 flex-wrap"
+      className="d-flex gap-4 flex flex-wrap"
       variants={container}
       initial="hidden"
       whileInView="visible"
@@ -13,7 +13,7 @@ export default function FrontendSkills({ frontend }) {
     >
       {frontend.map((fr, i) => {
         return (
-          <motion.div varaiants={fadeUp}>
+          <motion.div variants={fadeUp}>
             <div
               key={i}
               style={{
